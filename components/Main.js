@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
-import io from "Socket.IO-client";
+import io from "socket.io-client/dist/socket.io";
 import styles from "../styles/Main.module.css";
 let socket;
 
