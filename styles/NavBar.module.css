@@ -1,0 +1,38 @@
+.NavBar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(70, 69, 69);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavBar .start{
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+}
+
+.NavBar h1{
+    color: antiquewhite;
+}
+
+.NavBar .items{
+    cursor: pointer;
+    margin-left: 30px;
+    padding-right: 7px;
+    align-items: center;
+    display: flex;
+}
+
+.NavBar .items a{
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.NavBar .end{
+    cursor: pointer;
+    margin-right: 20px;
+    align-items: center;
+    display: flex
+}

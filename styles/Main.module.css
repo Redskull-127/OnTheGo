@@ -1,0 +1,135 @@
+.Main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main .Header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.Main .menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+
+.Main .menu .options{
+    cursor: pointer;
+    border-radius: 14px;
+    border: 1.25px inset antiquewhite;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 300px;
+    transition: 0.7s;
+}
+
+.Main .menu .options:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 7px 7px antiquewhite;
+}
+
+.Main .menu .options h1{
+    color: antiquewhite;
+}
+
+.Main .Header h1{
+    font-size: 50px;
+    font-weight: 600;
+    color: antiquewhite;
+}
+
+.create{
+    overflow-x: hidden;
+    animation: animate 1s forwards;
+    transform: translateX(50px);
+    transition: 0.7s;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    border-radius: 17px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.create .bi{
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 20px;
+}
+
+.create .createHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.create .body{
+    background-color: #464545;
+    margin: 20px;
+    border: 2px solid black;
+    width: 90%;
+    height: 400px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.create .body .messages{
+    height: 85%;
+    width: 100%;
+    background-color: black;
+}
+
+.create .body .messages p{
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.create .body .textbox{
+    margin: 10px;
+    height: 12%;
+    width: 100%;
+    background-color: black;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.create .body .textbox input{
+    background-color: transparent;
+    border: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.create .body .textbox button{
+    margin: 10px;
+}
+
+@keyframes animate {
+    100% {
+        transform: translateX(0px);
+    }
+}
